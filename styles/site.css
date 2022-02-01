@@ -1,0 +1,498 @@
+﻿/* Общие стили */
+
+@font-face {
+	font-family: Calibri;
+	src: url('fonts/calibri.ttf');
+}
+
+@font-face {
+	font-family: Arial;
+	src: url('fonts/arial.ttf');
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    font-size: 1em;
+    font-family: Calibri;
+    margin: 0px;
+    padding: 0px;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+/* Заголовки */
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: Calibri;
+}
+
+h1
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+h4
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* Основные секции страницы */
+
+.page
+{
+    margin: 0px auto 0px auto;
+}
+
+.header
+{
+    font-family: Calibri;
+    font-size: 1.8em;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+    height: 40px;
+    background-image: url(../images/head_top.png);
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.header_text
+{
+    padding-right: 200px;
+    height: 40px;
+    float: left;
+    color: #99ccff;
+}
+
+.header_under
+{
+    margin: 0px;
+    padding: 0px;
+    height: 3px;
+    background-image: url(../images/head_under_small.png);
+}
+
+.menu_head
+{
+    height: 40px;
+}
+
+.menu_head_under
+{
+    margin: 0px;
+    padding: 0px;
+    height: 3px;
+    background-color: #949295;
+}
+
+.menu_head_item a
+{
+    font-family: Calibri;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.menu_head_item a:hover
+{
+    background-color: #949295;
+}
+
+.menu_head_item_selected
+{
+    font-family: Calibri;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    height: 40px;
+    vertical-align: middle;
+    background-color: #949295;
+}
+
+.menu_head_item a:hover
+{
+    background-color: #646367;
+}
+
+.menu_language
+{
+    float: right;
+    width: 80px;
+    padding-right: 10px;
+}
+
+.menu_language_item a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu_language_item_selected
+{
+    text-decoration: none;
+    color: #99ccff;
+}
+
+.menu
+{
+    font-family: Calibri;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background-color: #949295;
+    color: #ffffff;
+}
+
+.menu_item a
+{
+    font-family: Calibri;
+    font-size: 1.4em;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    height: 30px;
+    float: left;
+    color: #ffffff;
+}
+
+.menu_item a:hover
+{
+    color: #000000;
+    background-color: #C9C8CE;
+}
+
+.menu_item_selected
+{
+    font-family: Calibri;
+    font-size: 1.4em;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    float: left;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 200px;
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+.header_parameters
+{
+    font-size: 1em;
+    font-weight: bold;
+    float: left;
+}
+
+.hint
+{
+    font-size: 1em;
+	color: gray;
+}
+
+.report
+{
+    padding-left: 5px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}
+
+.report_header
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 10px;
+    float: left;
+}
+
+.report_info
+{
+    font-size: 1em;
+    float: left;
+    color: gray;
+}
+
+.report_info a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.report_info a:hover
+{
+    color: blue;
+}
+
+.export_data
+{
+    padding-left: 5px;
+    float: left;
+}
+
+.graph
+{
+    padding-left: 5px;
+    float: left;
+}
+
+.footer
+{
+    font-family: Calibri;
+    font-size: 1em;
+    margin: 0px;
+    padding: 3px;
+    color: black;
+    background-color: #d3d3d3;
+    padding-left: 20px;
+    line-height: normal;
+}
+
+.listbox
+{
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+.listbox_report_type
+{
+    font-family: Calibri;
+    font-size: 1.4em;
+}
+
+.listbox_reference
+{
+    font-family: Calibri;
+    font-size: 1em;
+    width: 300px;
+}
+
+.report_table
+{
+    border-width: 1px;
+    border-spacing: 1px;
+    border-color: gray;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.head_table
+{
+    font-family: Calibri;
+    font-size: 1em;
+    font-weight: bold;
+    border-width: 1px;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+    background-color:#cccccc;
+    text-align: center;
+}
+
+.td_numeric
+{
+    font-family: Calibri;
+    font-size: 1em;
+    align: right;
+    width: 80px;
+    border-width: 1px;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+}
+
+.td_string
+{
+    font-family: Calibri;
+    font-size: 1em;
+    width: 200px;
+    border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+}
+
+.report_tab
+{
+	border-width: 1px;
+	border-spacing: 1px;
+	border-style: none;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+.report_tab td
+{
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: gray;
+	background-color: red;
+}
+
+/* таблица для размещения элементов как сетка */
+
+.table_layout
+{
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+.table_layout td
+{
+    padding: 0;
+}
+
+.table_layout_left
+{
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+.table_layout_left td
+{
+    padding: 0;
+}
+
+a.button
+{
+    border:0;
+    text-align:center;
+    text-decoration:none;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:#999 0px 0px 1px;
+    -moz-box-shadow:#999 0px 0px 1px;
+    box-shadow:#999 0px 0px 1px;
+    background:#4aa6d6;
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#949295), to(#c0c0c0));
+    background:-webkit-linear-gradient(#949295, #c0c0c0);
+    background:-moz-linear-gradient(#949295, #c0c0c0);
+    background:-ms-linear-gradient(#949295, #c0c0c0);
+    background:-o-linear-gradient(#949295, #c0c0c0);
+    background:linear-gradient(#949295, #c0c0c0);
+    color:#fff;
+    padding:3px 10px;
+    font-family: Calibri;
+    font-size:1.1em;
+    text-shadow:1px 1px 1px #808080;
+    display:inline-block;
+}
+
+a.button:hover
+{
+    color:#fff;
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#4aa6d6), to(#1f7daa));
+    background:-webkit-linear-gradient(#4aa6d6, #1f7daa);
+    background:-moz-linear-gradient(#4aa6d6, #1f7daa);
+    background:-ms-linear-gradient(#4aa6d6, #1f7daa);
+    background:-o-linear-gradient(#4aa6d6, #1f7daa);
+    background:linear-gradient(#4aa6d6, #1f7daa);
+}
+
+a.button:active
+{
+    color:#093950;
+    text-shadow:1px 1px 1px #7ac8f0;
+    -webkit-box-shadow:#093950 0px 2px 3px inset;
+    -moz-box-shadow:#093950 0px 2px 3px inset;
+    box-shadow:#093950 0px 2px 3px inset;
+}
+
+a.add
+{
+    font-family: Calibri;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.checkbox
+{
+    vertical-align: middle;
+}
+
+.radio
+{
+    /*vertical-align: middle;*/
+}
+
+.life_report
+{
+    font-family: Calibri;
+    font-size: 1.2em;
+}
+
+.life_report_title
+{
+	vertical-align: middle;
+    font-family: Calibri;
+    font-size: 1.2em;
+}
+
+.life_report_result
+{
+	color: blue;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 1.3em;
+}
