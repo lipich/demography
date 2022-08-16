@@ -34,6 +34,7 @@ $arrData = GetMortalityMapData($country, $start_year, $end_year, $start_age, $en
 // находим минимум и максимум
 $arrDataMax = floatval($arrData[0][0]);
 $arrDataMin = floatval($arrData[0][0]);
+$arrDataMid = 0;
 
 foreach ($arrData as $age)
 {
@@ -41,10 +42,20 @@ foreach ($arrData as $age)
     {
         if (floatval($age[$i]) > $arrDataMax) $arrDataMax = floatval($age[$i]);
         if (floatval($age[$i]) < $arrDataMin) $arrDataMin = floatval($age[$i]);
+        $arrDataMid += $age[$i];
     }
 }
 
 // сглаживание данных
+$arrDataMid = $arrDataMid / count($arrData, COUNT_RECURSIVE);
+$dateDiff_left = $arrDataMid - $arrDataMin;
+$dateDiff_right = $arrDataMax - $arrDataMid;
+
+if ($dateDiff_left < $dateDiff_right) 
+    $arrDataMax = $arrDataMid + $dateDiff_left;
+else
+    $arrDataMin = $arrDataMid - $dateDiff_right;
+
 $arrDataMaxSmooth = $arrDataMax;
 $arrDataMinSmooth = $arrDataMin;
 
@@ -195,6 +206,8 @@ else // выводим теплокарту
     // debug - memory usage
     //$mem = number_format(memory_get_usage());
     //imagestring($image, 2, 50, 10, $mem, $black);
+    //imagestring($image, 2, 50, 50, $arrDataMax, $white);
+    //imagestring($image, 2, 50, 70, $arrDataMin, $white);
 
     // выводим изображение
     header("content-type: image/png");
